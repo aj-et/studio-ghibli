@@ -1,0 +1,66 @@
+.container {
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.img-card {
+    width: 500px;
+}
+
+.logo {
+    width: 100%;
+}
+
+.logo-card {
+    width: 150px;
+}
+
+.movie-cont {
+    border: 1px solid black;
+    width: 100%;
+}
+
+.movie-img {
+    width: 100%;
+}
+
+.navigation {
+    position: fixed;
+    width: 100%;
+    background: rgb(7, 157, 236);
+    top: 0;
+}
+
+.nav-menu {
+    /* width: 100%;
+    border: 1px solid black; */
+}
+
+
+/* This is for the scrollbar */
+
+body::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+body::-webkit-scrollbar-thumb:active {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+/* End of scrollbar CSS */
