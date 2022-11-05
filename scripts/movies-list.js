@@ -24,13 +24,12 @@ async function renderMovieData() {
         let htmlSegment = `<div class="movie-cont">
                             <div class="img-card"><img class="movie-img" src="${title.movie_banner}"></div>
                             <h2>${title.title}</h2>
-                            <p>${title.release_date}</p>
-                            <p>${title.running_time}</p>
-                            <p>${title.rt_score}</p>
-                            <p>${title.director}</p>
-                            <p>${title.producer}</p>
-                            <p>${title.description}</p>
-                            <p>
+                            <p>Release Date: ${title.release_date}</p>
+                            <p>Running Time: ${title.running_time}</p>
+                            <p>Ratings: ${title.rt_score}</p>
+                            <p>Director: ${title.director}</p>
+                            <p>Producer: ${title.producer}</p>
+                            <p>Description: ${title.description}</p>
                             
                             </div>`;
 

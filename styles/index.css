@@ -1,7 +1,13 @@
+footer {
+    background-color: rgb(7, 157, 236);
+}
+
 .container {
     border: 1px solid red;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .img-card {
@@ -18,7 +24,8 @@
 
 .movie-cont {
     border: 1px solid black;
-    width: 100%;
+    /* width: 100%; */
+    margin: 10px;
 }
 
 .movie-img {
@@ -26,15 +33,15 @@
 }
 
 .navigation {
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     background: rgb(7, 157, 236);
     top: 0;
 }
 
 .nav-menu {
-    /* width: 100%;
-    border: 1px solid black; */
+    /* width: 100%; */
+    /* border: 1px solid black; */
 }
 
 
