@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Studio Ghibli</title>
     <link rel="stylesheet" href="./styles/index.css">
-    <script src='./scripts/movies-list.js'></script>
+    
 </head>
 <body>
     <div id="content">
@@ -20,23 +20,53 @@
                 </a>
                 <div class="nav-menu">
                     <a href="#">Home</a>
-                    <a href="#">Films</a>
-                    <a href="#">Filter Search</a>
-                    <a href="#">Contact Me</a>
+                    <a href="./pages/films.html">Films</a>
+                    <a href="./pages/about.html">About</a>
+                    <a href="./pages/contactme.html">Contact Me</a>
                 </div>
             </nav>
         </header>
     
         <main>
-            <div class='container'></div>
+            <div class="hero-box">
+                <div class="hero1">
+                    <img src="./images/howls.jpg" alt="Howls Moving Castle" class="slide-img">
+                    <h1 id="slide-text" >Howl's Moving Castle</h1>
+                </div>
+
+                <button class="btn prev" onclick="prev()"><i class="arrow left"></i></button>
+                <button class="btn next" onclick="next()"><i class="arrow right"></i></button>
+            </div>
+
+            <div class="news-box">
+                <a href="https://www.reddit.com/r/StarWars/comments/f8z5em/the_star_wars_saga_in_the_style_of_studio_ghibli/" target="_blank">
+                    <img id="news-img" src="./images/SG&SW2.jpg" alt="Star Wars in style of Studio SGhibli by IG@THE.ANDREWKWAN">
+                </a>
+                    <div class="nb-text">
+                        <h2>UPDATE: Studio Ghibli Collaborating With Lucasfilm on a New 'Star Wars' Project</h2>
+                        <p>Studio Ghibli is teasing a collaboration with Lucasfilm on (potentially) a new Star Wars project.
+                            The legendary Japanese animation studio posted a short teaser on Twitter with the Lucasfilm logo as well as their own.</p>
+                        <br>
+                        <h2>UPDATE:</h2>
+                        <p>The official Studio Ghibli Twitter account has posted a second tweet regarding their collaboration with Lucasfilm.
+                            This time a picture of a Grogu figurine with director Hayao Miyazaki sitting in the background,
+                            all but confirming Studio Ghibli&apos;s Lucasfilm project is indeed a Star Wars one.</p>
+                        <p>While we still don&apos;t know what the project is, the timing of these teases could mean the studio is involved in the
+                            <a href="https://www.starwarsnewsnet.com/2022/11/grogu-and-dust-bunnies-short-reportedly-coming-to-disney-plus-november-12-on-third-anniversary-of-the-mandalorian.html" target="_blank">
+                                Grogu and the Dust Bunnies</a> short on Disney Plus. Theorists online have likened the “dust bunnies” as a possible reference to the
+                            <a href="https://ghibli.fandom.com/wiki/Susuwatari" target="_blank">traveling soot sprites</a>  as seen in My Neighbor Totoro and Spirited Away.</p>
+                            <a href="https://www.starwarsnewsnet.com/2022/11/japanese-animation-studio-ghibli-teases-collaboration-with-lucasfilm-star-wars.html" target="_blank">Learn more...</a>
+                </div>
+            </div>
         </main>
     
         <footer>
             <h1>STUDIO GHIBLI COLLECTION</h1>
             <p>&copy; 2022 Studio Ghibli. All Rights Reserved</p>
 
-            <h3>Presented by</h3>
-            <img src="#" alt="My own logo">
+            <h3>Brought to you by:</h3>
+            <img src="#" alt="Studio Ghibli">
+            <p>Socials:</p>
             <div class="social">
                 <a href="#" target="_blank">
                     <img src="#" alt="facebook">
@@ -50,6 +80,6 @@
             </div>
         </footer>
     </div>
-    
+    <script src="./scripts/slider.js"></script>
 </body>
 </html>

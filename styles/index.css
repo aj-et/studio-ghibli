@@ -1,3 +1,13 @@
+:root {
+    user-select: none;
+}
+
+body {
+    max-width: 1600px;
+    margin: 0 auto;
+    /* font-size: 20px; */
+}
+
 footer {
     background-color: rgb(7, 157, 236);
 }
@@ -53,7 +63,134 @@ footer {
     background-color: yellow;
 }
 
+.hero-box img {
+    width: 100%;
+}
 
+.news-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #079DEC;
+}
+
+.nb-text {
+    grid-column: 2/4;
+    font-size: 18px;
+}
+
+/* Positioning Bottom Left for Hero Image */
+.hero-box {
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+.hero-box h1 {
+    position: absolute;
+    top: 0px;
+    left: 6px;
+}
+
+.prev {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+}
+
+.next {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+}
+
+/* end of positioning */
+
+/* This is for the index buttons */
+.btn {
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 10px;
+}
+
+.arrow:hover {
+    border: solid red;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 10px;
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+/* end of index buttons */
+
+/* This section is for the about.html */
+.about-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.about-box h2 {
+    grid-column: 2/3;
+    text-align: center;
+}
+
+.about-box img {
+    padding: 10px;
+    grid-column: 1/2;
+}
+
+.about-box p {
+    padding: 10px;
+    grid-column: 2/4;
+}
+
+/* End of about.html */
+
+/* Animated Text */
+
+#slide-text
+{
+    /* text-transform: uppercase; */
+    background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    /* text-fill-color: transparent; */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 4s linear infinite;
+    display: inline-block;
+    /* font-size: 190px; */
+}
+
+@keyframes textclip {
+to {
+    background-position: 200% center;
+    }
+}
+/* End of animated text */
 
 /* This is for the scrollbar */
 
