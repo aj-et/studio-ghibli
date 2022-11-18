@@ -1,6 +1,7 @@
 // JS
 
 // This is for the hero box slider
+var globalID;
 const slider_img = document.querySelector('.slide-img');
 const slider_text = document.getElementById('slide-text');
 let images = ['howls.jpg', 'dragon.jpg', 'totoro.jpg'];
@@ -8,15 +9,15 @@ let title = ['Howl\'s Moving Castle', 'Tales from Earthsea', 'My Neighbor Totoro
 let i = 0; // Current image index
 let t = 0; // Current text index
 
-function prev(){
-    if(i <= 0) i = images.length;
-    i--;
+// function prev(){
+//     if(i <= 0) i = images.length;
+//     i--;
 
-    if(t <= 0) t = title.length;
-    t--;
+//     if(t <= 0) t = title.length;
+//     t--;
 
-    return setImg();
-}
+//     return setImg();
+// }
 
 function next(){
     if(i >= images.length-1 ) i = -1;
@@ -25,14 +26,18 @@ function next(){
     if(t >= title.length-1 ) t = -1;
     t++;
 
-    return setImg();
-}
-
-function setImg(){
+    // return setImg();
     slider_img.setAttribute('src', './images/' + images[i]);
     slider_text.innerHTML = title[i];
-    return;
 }
+
+// function setImg(){
+//     slider_img.setAttribute('src', './images/' + images[i]);
+//     slider_text.innerHTML = title[i];
+//     return;
+// }
+
+setInterval(next, 10000);
 
 // This is for the news box slider on timer
 const news_img = document.getElementById('news-img');
