@@ -22,15 +22,15 @@ async function renderMovieData() {
     let html = '';
     titles.forEach(title => {
         let htmlSegment = `<div class="movie-cont">
-                            <div class="img-card"><img class="movie-img" src="${title.movie_banner}"></div>
+                            <div class="img-card"><img src="${title.movie_banner}"></div>
                             <div class="in-card">
                                 <h2>${title.title}</h2>
-                                <p>Release Date: ${title.release_date}</p>
-                                <p>Running Time: ${title.running_time}</p>
+                                <p>Released: ${title.release_date}</p>
+                                <p>Runtime: ${title.running_time}</p>
                                 <p>Ratings: ${title.rt_score}/100</p>
                                 <p>Director: ${title.director}</p>
                                 <p>Producer: ${title.producer}</p>
-                                <p>Description: ${title.description}</p>
+                                <p class="desc">Description: ${title.description}</p>
                             </div>
                             
                             </div>`;
