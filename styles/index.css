@@ -3,9 +3,9 @@
 }
 
 body {
-    max-width: 1600px;
-    margin: 0 auto;
     font-size: 22px;
+    margin: 0 auto;
+    max-width: 1600px;
 }
 
 /* This is all for header */
@@ -13,15 +13,17 @@ header {
     background-color: rgb(7, 157, 236);
     display: grid;
     grid-template-columns: 150px auto;
+    /* border: 1px solid black; */
     /* width: 100%; */
 }
 
 nav {
-    display: flex;
+    z-index: 1;
+    display: inline-flex;
     justify-content: space-around;
+    /* border: 1px solid black; */
     /* position: fixed; */
-    /* width: 100%;
-    background: rgb(7, 157, 236);
+    /* background: rgb(7, 157, 236);
     top: 0; */
 }
 
@@ -33,8 +35,8 @@ nav a {
 }
 
 nav a:hover {
-    background-color: yellow;
-    color: blue;
+    /* background-color: yellow; */
+    color: yellow;
     border-radius: 10px;
 }
 
@@ -150,7 +152,12 @@ footer ul {
 }
 
 .logo-card {
-    width: 150px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    /* width: 150px; */
+    /* border: 1px solid black; */
+    /* margin-top: 16px; */
 }
 
 .hero-box img {
@@ -161,11 +168,18 @@ footer ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     background-color: #079DEC;
+    height: 833px;
+}
+
+.news-box img {
+    width: 100%;
+    height: 100%;
 }
 
 .nb-text {
     grid-column: 2/4;
     font-size: 18px;
+    padding: 10px;
 }
 
 /* Positioning Bottom Left for Hero Image */
@@ -236,7 +250,9 @@ footer ul {
 
 .about-box h2 {
     grid-column: 2/3;
-    text-align: center;
+    /* text-align: center; */
+    position: relative;
+    top: 50px;
 }
 
 .about-box img {
@@ -249,6 +265,7 @@ footer ul {
 .about-box p {
     padding: 10px;
     grid-column: 2/4;
+
 }
 
 /* End of about.html */
@@ -260,10 +277,14 @@ footer ul {
     /* text-transform: uppercase; */
     background-image: linear-gradient(
     -225deg,
-    #231557 0%,
+    /* #231557 0%,
     #44107a 29%,
     #ff1361 67%,
-    #fff800 100%
+    #fff800 100% */
+    #079DEC 0%,
+    #000029 29%,
+    #FFE491 67%,
+    #9EB57D 100%
     );
     background-size: auto auto;
     background-clip: border-box;
@@ -284,6 +305,29 @@ to {
     }
 }
 /* End of animated text */
+
+/* Go to top */
+#topBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#topBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+
+/* End of topBtn */
 
 /* This is for the scrollbar */
 
@@ -311,3 +355,40 @@ body::-webkit-scrollbar-thumb:active {
 }
 
 /* End of scrollbar CSS */
+
+/* cat-bus */
+#cat-bus {
+    width: 100px;
+    /* float: right; */
+    z-index: 0;
+    position: relative;
+    animation: moving-cat-bus linear 10s infinite;
+    /* border: 1px solid black; */
+}
+
+@keyframes moving-cat-bus {
+     0%  {left:1448px; top:-118px;}
+     100%  {left:-50px; top:-118px;}
+     /* 50%  {transform: scaleY(-1) scaleX(-1); left:-50px; top:-992px;}
+     100%  {transform: scaleY(-1) scaleX(-1); left:1448px; top:-992px;} */
+
+    /* 100% {left:0px; top:-117px;} */
+    /* 100%  {transform:scaleY(-1),rotate(90deg); left:0px; top:0px;} */
+    /*
+    50%  { left:1600px; top:200px;}
+    75%  { left:0px; top:200px;}
+    100% {left:0px; top:0px;} */
+}
+
+/* end of cat-bus */
+
+/* Responsive design */
+
+@media only screen and (max-width: 600px) {
+    header {
+        width: 100%;
+    }
+    #cat-bus {
+        display: none;
+    }
+  }

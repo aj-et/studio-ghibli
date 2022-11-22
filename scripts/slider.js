@@ -37,7 +37,7 @@ function next(){
 //     return;
 // }
 
-setInterval(next, 10000);
+setInterval(next, 6000);
 
 // This is for the news box slider on timer
 const news_img = document.getElementById('news-img');
