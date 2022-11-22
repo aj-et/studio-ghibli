@@ -397,7 +397,8 @@ body::-webkit-scrollbar-thumb:active {
     }
 
     .news-box a {
-        grid-column: 2/3;
+        grid-column: 1/4;
+        /* height: 500px; */
     }
 
     .nb-text {
@@ -430,9 +431,29 @@ body::-webkit-scrollbar-thumb:active {
         grid-row: 3/4;
         grid-column: 1/4;
     }
-
     
     #cat-bus {
         display: none;
+    }
+
+    /* Footer */
+    footer {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .foot1 {
+        grid-row: 1/2;
+        grid-column: 1/5;
+    }
+
+    .foot2 {
+        grid-row: 2/3;
+        grid-column: 1/5;
+    }
+
+    .foot3 {
+        grid-row: 3/4;
+        grid-column: 1/5;
+        text-align: center;
     }
 }
