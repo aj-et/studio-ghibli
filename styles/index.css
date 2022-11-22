@@ -168,7 +168,8 @@ footer ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     background-color: #079DEC;
-    height: 833px;
+    /* height: 833px; */
+    height: 100%;
 }
 
 .news-box img {
