@@ -384,6 +384,22 @@ body::-webkit-scrollbar-thumb:active {
 
 /* end of cat-bus */
 
+/* Soot-sprite */
+.main-soot {
+    padding: 100px;
+    text-align: center;
+}
+
+.soot {
+    width: 500px;
+    border-left: 10px solid black;
+    border-radius: 10px;
+    /* top: -100px;
+    left: 1408px; */
+}
+
+/* end of Soot-sprite */
+
 /* Responsive design */
 
 @media only screen and (max-width: 600px) {
