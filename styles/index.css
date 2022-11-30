@@ -28,7 +28,7 @@ body {
 
 /* This is all for header */
 header {
-    background-color: #62C4F9;
+    background-color: #D8EFFD;
     display: grid;
     grid-template-columns: 150px auto;
     /* border: 1px solid black; */
@@ -54,7 +54,7 @@ nav a {
 
 nav a:hover {
     /* background-color: yellow; */
-    color: #FFEBAD;
+    color: #FFF5D6;
     border-radius: 10px;
 }
 
@@ -66,7 +66,7 @@ nav a:hover {
 
 /* Footer Styles */
 footer {
-    background-color: #62C4F9;
+    background-color: #D8EFFD;
     padding: 25px 50px;
     margin-top: 50px;
     display: grid;
@@ -115,6 +115,10 @@ footer ul {
     width: 200px;
     /* background-color: aqua; */
 }
+
+.foot2 img:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 /* End of footer */
 
 
@@ -133,7 +137,7 @@ footer ul {
 
 .movie-cont {
     /* border: 1px solid black; */
-    background-color: #62C4F9;
+    background-color: #D8EFFD;
     /* width: 100%; */
     margin: 10px;
 }
@@ -185,7 +189,7 @@ footer ul {
 .news-box {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    background-color: #62C4F9;
+    background-color: #D8EFFD;
     /* height: 833px; */
     height: 100%;
 }
@@ -484,6 +488,10 @@ body::-webkit-scrollbar-thumb:active {
     .foot2 {
         grid-row: 2/3;
         grid-column: 1/5;
+    }
+
+    .foot2 img {
+        width: 200px;
     }
 
     .foot3 {
