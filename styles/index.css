@@ -75,6 +75,10 @@ footer {
     align-items: center;
 }
 
+.fot1 {
+    width: 300px;
+}
+
 .foot1 {
     grid-column: 2/4;
     text-align: center;
