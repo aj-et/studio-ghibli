@@ -1,7 +1,7 @@
 async function getMovieData() {
-    let POKE_URL = 'https://ghibliapi.herokuapp.com/films';
+    let GHIBLI_URL = 'https://ghibliapi.onrender.com/films';
     try {
-        let response = await fetch(POKE_URL);
+        let response = await fetch(GHIBLI_URL);
         return await response.json();
     } catch (error) {
         console.log(error);
